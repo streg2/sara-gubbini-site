@@ -36,3 +36,18 @@
   };
 })();
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('*').forEach(function(el){
+    if(el.childNodes.length===1&&el.childNodes[0].nodeType===3&&el.childNodes[0].textContent.trim()==='[ Foto Avv. Sara Gubbini ]'){
+      var img=document.createElement('img');
+      img.src='sara.jpg';
+      img.alt='Avv. Sara Gubbini';
+      img.style.cssText='width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:inherit;display:block;';
+      el.innerHTML='';
+      el.appendChild(img);
+    }
+  });
+});
+</script>
