@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy
+Disallow: /cookie-policy
+Disallow: /privacy
+Disallow: /cookie
+
+Sitemap: https://avvocato-sara-gubbini.pages.dev/sitemap.xml
